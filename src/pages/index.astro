@@ -1,11 +1,250 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import "@fontsource-variable/montserrat";
+import { Phone, MapPin, Mail, Linkedin, Github } from "lucide-astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/moon.png" />
+    <title>Johanna Portfolio</title>
+  </head>
+  <body class="bg-black text-white font-montserrat">
+    <Header />
+
+    <!-- Sección Hero -->
+    <section
+      id="hero"
+      class="w-full mx-auto lg:w-[740px] py-32 flex flex-col items-center px-9"
+    >
+      <img
+        src="/public/montse.jpg"
+        alt="Profile Picture"
+        class="rounded-full shadow-md hover:shadow-lg transition-all duration-300 ease-in-out
+               hover:scale-105 size-60 mb-6"
+      />
+      <h1 class="text-white text-5xl font-semibold text-center">
+        Hi, I'm Johanna
+      </h1>
+      <p class="text-gray-400 text-lg text-center max-w-xl mt-4">
+        I am a passionate software developer focused on creating elegant and
+        efficient solutions. I love building clean and user-friendly
+        applications.
+      </p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="w-full max-w-3xl mx-auto py-20 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-400 text-lg leading-relaxed">
+        My name is Johanna Montserrat Pichardo Nava, and I’m a Mexican web
+        developer specializing in UI/UX design. I’m currently studying to become
+        a full-stack developer, but my true passion lies in crafting beautiful
+        and intuitive user interfaces. I strive to create applications that not
+        only function seamlessly but also deliver an exceptional user
+        experience. I love exploring new technologies and continuously learning
+        from them.
+      </p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="w-full max-w-5xl mx-auto py-20 px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="bg-gray-900 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <h3 class="text-xl font-semibold">Crochet Plush Toy Ecommerce</h3>
+          <p class="text-gray-400 mt-2">
+            A web application was developed for an online store specializing in
+            crochet plush toys. The project was carried out using Java as the
+            main programming language, complemented by HTML, TailwindCSS, and
+            JavaScript. The development process was conducted in collaboration
+            with my team, ensuring a structured and efficient workflow.
+          </p>
+          <br />
+          <div class="flex space-x-4">
+            <img src="/public/java.svg" alt="" class="w-8 h-8 object-contain" />
+            <img
+              src="/public/html5.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+            <img
+              src="/public/javascript.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+            <img
+              src="/public/tailwind.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+            <img
+              src="/public/css_old.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-900 p-6 rounded-xl shadow-md hover:scale-105 transition"
+        >
+          <h3 class="text-xl font-semibold">
+            Event Management Web & Native App
+          </h3>
+          <p class="text-gray-400 mt-2">
+            Developed a web and native application for managing events, focusing
+            on scheduling, tracking, and real-time updates. Worked with my
+            development team using React and React Native to create a
+            user-friendly interface and ensure smooth functionality.
+          </p>
+          <br />
+          <div class="flex space-x-4">
+            <img
+              src="/public/mongodb.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+            <img
+              src="/public/react_dark.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+            <img
+              src="/public/tailwind.svg"
+              alt=""
+              class="w-8 h-8 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section
+      id="skills"
+      class="w-full max-w-4xl mx-auto py-20 px-6 text-center"
+    >
+      <h2 class="text-3xl font-bold text-white mb-10">My Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <img
+          src="/public/html5.svg"
+          alt="HTML5 Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/css_old.svg"
+          alt="CSS Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/javascript.svg"
+          alt="JavaScript Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/react_dark.svg"
+          alt="React Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/tailwind.svg"
+          alt="TailwindCSS Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/python.svg"
+          alt="Python Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/java.svg"
+          alt="Java Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/mysql.svg"
+          alt="MySQL Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/mongodb.svg"
+          alt="MongoDB Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/spring.svg"
+          alt="Spring Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/git.svg"
+          alt="Spring Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+        <img
+          src="/public/github-dark.svg"
+          alt="Spring Logo"
+          class="w-12 h-12 object-contain filter grayscale brightness-75 transition-all duration-300 ease-in-out hover:filter-none"
+        />
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section
+      id="contact"
+      class="w-full max-w-3xl mx-auto py-20 px-6 text-center"
+    >
+      <h2 class="text-3xl font-semibold mb-6">Contact</h2>
+      <div class="flex flex-col items-center gap-4 text-gray-400 text-lg">
+        <div class="flex items-center gap-2">
+          <Phone class="size-5" />
+          <span>+52 7773790961</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <MapPin class="size-5" />
+          <span>Emiliano Zapata, Morelos, México</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <Mail class="size-5" />
+          <span>johannapichardonava@gmail.com</span>
+        </div>
+        <div class="flex items-center gap-2 font-semibold">
+          <Linkedin class="size-5" />
+          <a
+            href="https://www.linkedin.com/in/johanna-pichardo-697373312?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >Johanna Pichardo</a
+          >
+        </div>
+        <div class="flex items-center gap-2 font-semibold">
+          <Github class="size-5" />
+          <a href="https://github.com/moonpich">moonpich</a>
+        </div>
+      </div>
+    </section>
+
+    <slot />
+
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000;
+        font-family: "Montserrat Variable", sans-serif;
+      }
+    </style>
+  </body>
+</html>
