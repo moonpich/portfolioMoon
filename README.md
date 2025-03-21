@@ -1,48 +1,29 @@
-# Astro Starter Kit: Basics
+# 🌟 Welcome to My Portfolio! 🌟
 
-```sh
-npm create astro@latest -- --template basics
-```
+Hey there! 👋 I'm **Johanna Montserrat Pichardo Nava**, a passionate web developer and UI/UX designer from Mexico 🇲🇽. I specialize in crafting beautiful, responsive, and user-friendly websites and applications. 💻✨
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 💡 About Me:
+- 🎨 I love designing intuitive and elegant user interfaces.
+- 🌱 I'm always learning new technologies to stay up to date and grow.
+- 💪 Currently studying to become a **Full-Stack Developer**, but my heart beats faster for UI/UX design.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Skills:
+- **Frontend**: HTML, CSS, JavaScript, React, TailwindCSS
+- **Backend**: Java, Node.js, Firebase, MySQL, MongoDB
+- **Design Tools**: Figma, Sketch, Adobe XD
+- **Other Tools**: Git
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 📂 Projects:
+Here are a few projects I have worked on that showcase my development and design skills:
 
-## 🚀 Project Structure
+- **[Ecommerce Crochet Plush Toy](#)**: A full-fledged ecommerce website to buy adorable crochet plush toys! 💕🐻
+- **[Event Management App](#)**: A web and native mobile app for managing events from start to finish. 🎉📅
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📫 How to Reach Me:
+Feel free to connect with me! I'm always up for chatting about code, design, or the latest tech trends. 😊
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- 📧 Email: johannapichardonava@gmail.com
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Thank you for checking out my portfolio! 🌟 Let's build something amazing together! 🚀
